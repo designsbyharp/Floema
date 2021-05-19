@@ -1,0 +1,10 @@
+extends ../base.pug
+
+block variables 
+  - var template = 'detail'
+
+block content 
+  .detail
+    .detail__wrapper
+      figure.detail__media
+        img.detail__media__image(src=product.data.product.url)  
