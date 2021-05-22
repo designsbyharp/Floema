@@ -17,6 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(methodOverride())
 app.use(errorHandler())
+app.use(express.static(path.join(__dirname, 'public')))
 
 const Prismic = require('@prismicio/client')
 const PrismicDOM = require('prismic-dom')
@@ -80,7 +81,6 @@ app.get('/', async (req, res) => {
     fetchLinks: 'product.image'
   })
 
-  console.log(defaults.navigation)
 
   res.render('pages/home', {
     collections,

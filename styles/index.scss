@@ -1,3 +1,20 @@
-.test{
-   color: red;
-}
+// Uitls
+@import './utils/dir-utils';
+
+// Shared
+@import './shared/dir-shared';
+
+// Base
+@import './base/dir-base';
+
+// Components
+@import './components/dir-components.scss';
+
+// Layout
+@import './layout/dir-layout.scss';
+
+// Pages
+@import './pages/about/dir-about';
+@import './pages/collections/dir-collections';
+@import './pages/details/dir-details';
+@import './pages/home/dir-home';
